@@ -1,15 +1,16 @@
-<h1>
-Who am I? <%=@names %>
-</h1>
+
+<% if @names %>
+<h1>Who am I? I am <%= @names %>.</h1>
+<% end %>
 <div style='border: 3px dashed red'>
 <img src= 'http://i.giphy.com/118pNUM9rV3HRC.gif'>
 </div>
-<form action= /named-octopus>
- <br>
- <div>
-     <label for="Name">Name:</label>
-      <input type="text" id="name" name=names />
- </div>
+  <form action= /named-octopus>
+    <br>
+    <div>
+      <label for="Name">What to name me:</label>
+        <input type="text" name=names />
+      </div>
 <br>
    <!-- <div>
        <label for="Occupation">Occupation:</label>
@@ -17,6 +18,6 @@ Who am I? <%=@names %>
    </div>
    <br> -->
    <div class="button">
-       <input type="submit" id="submit" name="user_submit" />
+       <input type="submit" value="Name this octopus!" />
    </div>
  </form>
