@@ -12,6 +12,13 @@ get '/luke' do
   "Go forward to go back."
 end
 
-get '/octopus' do
+get '/random-octopus' do
+  @names = ["Amigo", "Ignacio", "Kafka"].sample
+  erb(:index)
+end
+
+get '/named-octopus' do
+  p params
+  @names = params[:names]
   erb(:index)
 end

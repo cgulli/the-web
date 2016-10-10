@@ -1,6 +1,22 @@
 <h1>
-My name is...<%=["Amigo", "Xavier", "Cecil"].sample %>
+Who am I? <%=@names %>
 </h1>
 <div style='border: 3px dashed red'>
 <img src= 'http://i.giphy.com/118pNUM9rV3HRC.gif'>
-</div>"
+</div>
+<form action= /named-octopus>
+ <br>
+ <div>
+     <label for="Name">Name:</label>
+      <input type="text" id="name" name=names />
+ </div>
+<br>
+   <!-- <div>
+       <label for="Occupation">Occupation:</label>
+       <input type ="text" id="occupation" name="user_occupation" />
+   </div>
+   <br> -->
+   <div class="button">
+       <input type="submit" id="submit" name="user_submit" />
+   </div>
+ </form>
