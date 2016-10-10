@@ -17,8 +17,12 @@ get '/random-octopus' do
   erb(:index)
 end
 
-get '/named-octopus' do
+post '/named-octopus' do
   p params
   @names = params[:names]
   erb(:index)
+end
+
+get '/octoform' do
+  erb(:octoform)
 end
